@@ -1,0 +1,13 @@
+# 发布签名配置模板 —— 复制为 android/key.properties 并填入你自己的信息。
+# 不配置也能构建：release 会自动回退 debug 签名（仅适合自测，不能上架/覆盖升级）。
+#
+# 1) 生成 keystore（在 android/app/ 目录下执行）：
+#    keytool -genkeypair -v -storetype JKS -keyalg RSA -keysize 2048 \
+#      -validity 10000 -alias upload -keystore upload-keystore.jks
+# 2) 填写下面的口令与别名（storeFile 相对 android/app/ 路径）。
+# ⚠ key.properties 与 .jks 含私钥口令，务必保持 git 忽略，切勿提交入库。
+
+storePassword=你的库口令
+keyPassword=你的键口令
+keyAlias=upload
+storeFile=upload-keystore.jks
