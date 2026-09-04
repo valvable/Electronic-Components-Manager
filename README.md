@@ -1,5 +1,7 @@
-# Electronic-Components-Manager
+# Electronic-Components-Manager 电子元件管家
 This is an AI-generated, offline component manager that puts your drawer into your computer. It scans LCSC bags, checks BOMs in seconds, and syncs via LAN—no cloud, no accounts—but is provided AS-IS with no warranties.
+
+AI 生成的离线元件管家，把你的电子抽屉搬进电脑。扫立创袋子、秒查 BOM、局域网同步，全离线无账号。注意：按现状提供，不承担任何担保责任
 
 免责声明
 
