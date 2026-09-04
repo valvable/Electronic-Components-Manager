@@ -1,0 +1,35 @@
+name: component_manager
+description: 电子元件库存管理软件（立创扫码元件入库 / BOM 库存对比），目标平台 Windows 桌面端 + Android。
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ---------- 数据库 ----------
+  sqflite: ^2.3.0                # Android/iOS 本地数据库
+  sqflite_common_ffi: ^2.3.0     # Windows/Linux 桌面端 FFI 数据库实现（sqflite 本身不支持桌面端）
+  sqlite3_flutter_libs: ^0.5.18  # 桌面端自动打包 SQLite 动态库（Windows 需要）
+  path: ^1.8.3                   # 路径拼接
+  path_provider: ^2.1.0          # 获取应用支持目录
+
+  # ---------- 第二阶段预留：BOM 导入 / 扫码 ----------
+  excel: ^4.0.0                  # 解析 .xlsx BOM 表
+  csv: ^6.0.0                    # 解析 CSV BOM 表
+  qr_code_scanner: ^1.0.0        # 扫描元件袋二维码（Android/iOS）
+  image_picker: ^1.0.0           # 从相册选图识别二维码（备用）
+
+  # ---------- 工具 ----------
+  intl: ^0.19.0                  # 日期格式化
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
